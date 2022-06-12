@@ -1,5 +1,15 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  let numbersAddedUp = []
+    array.map(number => {
+    for (let i = 0; i < array.length; i ++) {
+      if (array.indexOf(number) === i);
+      else {
+      numbersAddedUp += number + array[i]
+      }
+    } 
+  })
+  return numbersAddedUp.includes(target)
 }
 
 /* 
@@ -8,6 +18,9 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+    map through each number and add to other numbers
+
+    find the target from new array
 */
 
 /*
